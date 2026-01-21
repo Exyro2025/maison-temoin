@@ -1,44 +1,26 @@
-.site-header {
-  position: absolute;
-  top: 28px;
-  left: 32px;
-  z-index: 10;
-}
-
 .brand {
   display: flex;
   align-items: center;
   gap: 12px;
+  text-decoration: none;
+  /* Prevent logo from pushing the header taller */
+  max-height: 40px; 
 }
 
-.brand img {
-  height: 36px;      /* THIS is the critical constraint */
+.logo {
+  /* HARD CONSTRAINT: This prevents the 'overtaking' */
+  height: 32px !important; 
   width: auto;
-  opacity: 0.9;
+  display: block;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 .brand-text {
   display: flex;
   flex-direction: column;
-  line-height: 1.1;
-}
-
-.brand-name {
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-}
-
-.brand-sub {
-  font-size: 12px;
-  opacity: 0.65;
-}
-/* HARD CAP LOGO SIZE — prevents header takeover */
-.logo {
-  height: 26px;
-  width: auto;
-  max-height: 26px;
-  display: block;
+  justify-content: center;
+  white-space: nowrap; /* Keeps 'Post-Close Stewardship' on one line if needed */
 }
 
 
