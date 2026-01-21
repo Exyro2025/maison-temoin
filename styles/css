@@ -1,0 +1,10 @@
+.logo{
+  width:36px;
+  height:36px;
+  border-radius:12px;
+  object-fit:contain;
+  border:1px solid var(--line2);
+  background: linear-gradient(145deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
+  box-shadow: 0 10px 30px rgba(0,0,0,.45);
+  padding:6px; /* remove if your logo already has padding */
+}
