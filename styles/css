@@ -1,34 +1,37 @@
+/* Container for the logo and text */
 .brand {
   display: flex;
   align-items: center;
   gap: 12px;
   text-decoration: none;
+  min-height: 50px; /* Ensures the header area has enough room */
 }
 
-/* HARD CAP: This stops the logo from expanding the header */
+/* HARD CAP: Force the image to stay small */
 .logo {
-  height: 32px !important; /* Forces the image to stay small */
-  width: auto;
+  height: 32px !important; /* Set this exactly to your text height */
+  width: auto !important;  /* Prevents stretching */
   display: block;
-  flex-shrink: 0;
+  flex-shrink: 0;          /* Prevents header from squeezing it */
 }
 
+/* Vertical text alignment next to logo */
 .brand-text {
   display: flex;
   flex-direction: column;
   line-height: 1.1;
+  justify-content: center;
 }
 
 .brand-name {
   font-size: 16px;
-  font-weight: 600;
-  color: #ffffff; /* Or your --text variable */
+  font-weight: 700;
+  color: white;
 }
 
 .brand-sub {
   font-size: 11px;
   opacity: 0.7;
-  white-space: nowrap;
 }
 
 
