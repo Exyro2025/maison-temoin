@@ -1,4 +1,3 @@
-# maison-temoin
 # Maison Témoin
 
 Maison Témoin is a post-close home stewardship program designed for residential developers.
