@@ -3,24 +3,32 @@
   align-items: center;
   gap: 12px;
   text-decoration: none;
-  /* Prevent logo from pushing the header taller */
-  max-height: 40px; 
 }
 
+/* HARD CAP: This stops the logo from expanding the header */
 .logo {
-  /* HARD CONSTRAINT: This prevents the 'overtaking' */
-  height: 32px !important; 
+  height: 32px !important; /* Forces the image to stay small */
   width: auto;
   display: block;
   flex-shrink: 0;
-  object-fit: contain;
 }
 
 .brand-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  white-space: nowrap; /* Keeps 'Post-Close Stewardship' on one line if needed */
+  line-height: 1.1;
+}
+
+.brand-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff; /* Or your --text variable */
+}
+
+.brand-sub {
+  font-size: 11px;
+  opacity: 0.7;
+  white-space: nowrap;
 }
 
 
