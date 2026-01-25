@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Indice Jour Un™ — Registry Viewer</title>
+
+  <link rel="canonical" href="https://maison-temoin.vercel.app/indice-jour-un/" />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <style>
+    :root{
+      --bg0:#050607;
+      --bg1:#07090b;
+      --gridA:rgba(255,255,255,0.028);
+      --gridB:rgba(255,255,255,0.018);
+      --ink:rgba(255,255,255,0.74);
+      --muted:rgba(255,255,255,0.42);
+      --line:rgba(255,255,255,0.085);
+      --frame:rgba(255,255,255,0.08);
+      --shadow:rgba(0,0,0,0.86);
+      --radius:18px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body{
+      margin:0;
+      min-height:100vh;
+      background:
+        radial-gradient(circle at 50% 35%, rgba(255,255,255,0.06) 0%, transparent 42%),
+        radial-gradient(circle at 50% 50%, #0b0c0f 0%, var(--bg0) 58%, #000 100%);
+      color:var(--ink);
+      font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+      overflow:hidden;
+    }
+
+    /* Archive Grid */
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      background-image:
+        linear-gradient(var(--gridA) 1px, transparent 1px),
+        linear-gradient(90deg, var(--gridA) 1px, transparent 1px),
+        linear-gradient(var(--gridB) 1px, transparent 1px),
+        linear-gradient(90deg, var(--gridB) 1px, transparent 1px);
+      background-size: 140px 140px, 140px 140px, 28px 28px, 28px 28px;
+      opacity:0.55;
+    }
+
+    header{
+      position:fixed;
+      top:26px;
+      left:0;
+      right:0;
+      z-index:5;
+      text-align:center;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size:12px;
+      letter-spacing:0.28em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+
+    .installation{
+      position:fixed;
+      top:88px;
+      left: clamp(18px, 5vw, 56px);
+      right: clamp(18px, 5vw, 56px);
+      bottom: 96px;
+      border:1px solid var(--frame);
+      border-radius: var(--radius);
+      overflow:hidden;
+      box-shadow: 0 0 170px var(--shadow);
+      backdrop-filter: blur(2px);
+      z-index:2;
+    }
+
+    iframe{
+      width:100%;
+      height:100%;
+      border:none;
+      display:block;
+    }
+
+    /* Bottom plaque (footer) */
+    .plaque{
+      position:fixed;
+      left:0;
+      right:0;
+      bottom:0;
+      z-index:6;
+      padding: 14px 18px 22px;
+      background: linear-gradient(to top, rgba(0,0,0,0.72), rgba(0,0,0,0.0));
+    }
+
+    .plaque .inner{
+      max-width: 1080px;
+      margin: 0 auto;
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
+      display:flex;
+      align-items:flex-end;
+      justify-content:center;
+      text-align:center;
+      gap:18px;
+    }
+
+    .kicker{
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size:11px;
+      letter-spacing:0.14em;
+      text-transform:uppercase;
+      color:rgba(255,255,255,0.38);
+      margin-bottom:6px;
+    }
+
+    .line{
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size:11px;
+      letter-spacing:0.12em;
+      color:rgba(255,255,255,0.52);
+    }
+
+    .line em{
+      font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+      font-style: italic;
+      letter-spacing:0.08em;
+      color:rgba(255,255,255,0.60);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>Maison Témoin — Indice Jour Un™ Registry Viewer</header>
+
+  <div class="installation">
+    <!-- CHANGE ONLY THIS URL to your live Figma site -->
+    <iframe
+      src="https://bounce-pencil-90669340.figma.site"
+      allowfullscreen
+      referrerpolicy="no-referrer">
+    </iframe>
+  </div>
+
+  <div class="plaque">
+    <div class="inner">
+      <div>
+        <div class="kicker">Registry Viewer</div>
+        <div class="line">
+          Indice Jour Un™ — <em>Certified Day One</em> — Private Stewardship Installation
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
