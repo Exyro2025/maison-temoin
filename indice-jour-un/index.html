@@ -51,9 +51,10 @@
       opacity:0.55;
     }
 
+    /* Top Registry Label */
     header{
       position:fixed;
-      top:26px;
+      top:22px;
       left:0;
       right:0;
       z-index:5;
@@ -65,6 +66,37 @@
       color:var(--muted);
     }
 
+    /* ✅ Top Navigation Pills */
+    .top-nav{
+      position:fixed;
+      top:58px;
+      right: clamp(18px, 5vw, 56px);
+      z-index:8;
+      display:flex;
+      gap:10px;
+    }
+
+    .pill{
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size:11px;
+      letter-spacing:0.14em;
+      text-transform:uppercase;
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.14);
+      background: rgba(0,0,0,0.26);
+      color:rgba(255,255,255,0.62);
+      text-decoration:none;
+      transition: all 0.25s ease;
+    }
+
+    .pill:hover{
+      border-color: rgba(255,255,255,0.26);
+      background: rgba(0,0,0,0.38);
+      color:rgba(255,255,255,0.82);
+    }
+
+    /* Registry Frame */
     .installation{
       position:fixed;
       top:88px;
@@ -86,7 +118,7 @@
       display:block;
     }
 
-    /* Bottom plaque (footer) */
+    /* Bottom Plaque Footer */
     .plaque{
       position:fixed;
       left:0;
@@ -138,8 +170,19 @@
 
   <header>Maison Témoin — Indice Jour Un™ Registry Viewer</header>
 
+  <!-- ✅ NEW TOP TAB LINKS -->
+  <div class="top-nav">
+    <a class="pill" href="https://maison-temoin.vercel.app/">Maison</a>
+
+    <a class="pill"
+       href="https://bounce-pencil-90669340.figma.site"
+       target="_blank"
+       rel="noopener">
+      Prototype
+    </a>
+  </div>
+
   <div class="installation">
-    <!-- CHANGE ONLY THIS URL to your live Figma site -->
     <iframe
       src="https://bounce-pencil-90669340.figma.site"
       allowfullscreen
@@ -160,3 +203,4 @@
 
 </body>
 </html>
+
