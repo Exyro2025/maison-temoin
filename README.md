@@ -1,8 +1,8 @@
 # Maison Témoin
 
-Maison Témoin is a post-close home stewardship program designed for residential developers.
+Maison Témoin is a construction-phase residential systems authority layer designed for high-value developers building at portfolio scale.
 
-The service transforms the traditional warranty year into a structured, documented stewardship experience that reduces warranty noise, protects developer reputation, and creates defensible records.
+The service establishes a manufacturer-referenced baseline record **post–rough-in and prior to drywall**, identifying materially significant deviations early—when correction is routine and downstream warranty noise is avoidable.
 
 ---
 
@@ -11,17 +11,34 @@ The service transforms the traditional warranty year into a structured, document
 This repository contains the public-facing website for Maison Témoin.
 
 The site is intentionally minimal and informational.  
-Pricing and operational details are provided privately to developers.
+Program terms and pricing are issued privately to developers.
 
 ---
 
-## Core Program Overview
+## Core Offering
 
-- Four scheduled stewardship visits in the first 12 months post-close  
-- Loss-prevention actions focused on water risk, HVAC efficiency, and system health  
-- Serialized digital documentation (Registre Maison) for each enrolled home  
-- Structured triage routing for warranty-potential items  
-- Single coordination layer for homeowners
+### Construction-Phase Indice Jour Un™ Alignment Record
+
+Maison Témoin provides:
+
+- Construction-phase baseline issuance (post–rough-in / pre–drywall)
+- Manufacturer-referenced documentation for material deviations
+- Priority triage routing (P1–P4) for developer coordination
+- Serialized continuity record via **Registre Maison™**
+- Reduced downstream warranty escalation, closing friction, and reputational risk
+
+Post-close continuity stewardship may be extended by request.
+
+---
+
+## Operational Boundaries
+
+Maison Témoin observes and documents only.
+
+- No repairs are performed  
+- No trade direction is issued  
+- No certification, code-compliance signoff, or warranty administration is provided  
+- Corrective work remains the domain of licensed trades and the developer’s existing process  
 
 ---
 
@@ -39,6 +56,7 @@ Pricing and operational details are provided privately to developers.
 This site is deployed as a static project.
 
 To update:
+
 1. Edit `index.html`
 2. Commit changes
 3. Push to main branch
@@ -49,9 +67,12 @@ To update:
 ## Notes
 
 - Pricing is not displayed publicly by design.
-- This repository does not contain contracts, internal operations, or proprietary workflows.
+- This repository does not contain contracts, internal protocols, or proprietary workflows.
 - All program terms are issued privately.
 
 ---
 
 © Maison Témoin. All rights reserved.
+
+
+
