@@ -303,6 +303,84 @@
       color:var(--muted2);
       font-size:12px;
     }
+    <style>
+  /* ===== HERO REBUILD (Paradigm) ===== */
+  .hero-tight { padding: 62px 0 34px; }
+
+  .hero-titleblock{
+    max-width: 980px;
+    margin-top: 16px;
+  }
+
+  .hero-kicker{
+    margin: 14px 0 0;
+    max-width: 760px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .hero-kicker strong{
+    color: var(--text);
+    font-weight: 650;
+  }
+
+  .hero-subtitle{
+    display:block;
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 520;
+    color: var(--muted);
+    letter-spacing: -.2px;
+  }
+
+  .hero-grid{
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  @media (max-width: 980px){
+    .hero-grid{ grid-template-columns: 1fr; }
+  }
+
+  .hero-card{
+    border: 1px solid var(--line);
+    border-radius: var(--radius2);
+    padding: 16px 16px 14px;
+    background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+    box-shadow: var(--shadow);
+  }
+
+  .hero-card h3{
+    margin: 0 0 10px;
+    font-size: 13px;
+    letter-spacing: .25px;
+    color: var(--accent);
+    font-weight: 650;
+  }
+
+  .hero-card p{
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .hero-card p em{
+    color: var(--text);
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  .hero-divider{
+    margin-top: 18px;
+    height: 1px;
+    background: var(--line);
+  }
+</style>
+
     
     .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
   </style>
@@ -342,35 +420,51 @@
     <div class="pill">Registre Maison™ Ledger</div>
   </div>
 
-  <h1>Maison Témoin<br/>
-    <span style="color:var(--muted); font-weight:500;">
-      The Science of Systematic Acceptance
-    </span>
-  </h1>
+ <h1>
+  Maison Témoin
+  <span class="hero-subtitle">The Science of Systematic Acceptance</span>
+</h1>
 
-  <p class="subhead">
+<div class="hero-titleblock">
+  <p class="hero-kicker">
     <strong>The Invisible Liability.</strong>
-    The costliest defects are rarely dramatic — they are the quiet deviations that pass unnoticed during the build,
-    only to surface after the handoff as cascading warranty liabilities.
-    Maison Témoin provides the internal authority layer residential developers need to bridge the gap between
-    “finished” and “engineered.”
+    The costliest defects are rarely dramatic — they are quiet deviations that pass unnoticed during the build,
+    then surface after handoff as cascading warranty liabilities. Maison Témoin provides the internal authority layer
+    developers use to bridge the gap between “finished” and “engineered.”
   </p>
 
-  <p class="subhead" style="margin-top:14px;">
-    <strong>Our Proprietary Framework.</strong>
-    We deploy a structured field observation protocol that cross-references every critical asset against its Golden Standard.
-    Through the Indice Jour Un™ lens, performance is verified before keys are ever in hand — ensuring alignment with the precise
-    tolerances of the world’s leading manufacturers.
-  </p>
+  <div class="hero-grid">
+    <div class="hero-card">
+      <h3>Our Proprietary Framework</h3>
+      <p>
+        Structured field observation that cross-references critical assets against their <em>Golden Standard</em>.
+        Through the Indice Jour Un™ lens, performance is verified before keys are in hand — aligned with manufacturer tolerances.
+      </p>
+    </div>
 
-  <p class="subhead" style="margin-top:14px;">
-    <strong>The Registre Maison™: A Nationwide Standard.</strong>
-    Every observation is logged in our serialized ledger, creating a persistent medical history of system behavior.
-    This standardized stewardship framework enables developers to detect systemic subcontractor patterns across portfolios —
-    transforming reactive service into proactive risk mitigation.
-  </p>
+    <div class="hero-card">
+      <h3>Golden Standard Verification</h3>
+      <p>
+        We reference manufacturer documentation as the controlling baseline and flag materially significant deviations
+        early — while correction remains routine inside the developer’s process.
+      </p>
+    </div>
 
-</section>
+    <div class="hero-card">
+      <h3>Registre Maison™ — A Nationwide Standard</h3>
+      <p>
+        Every observation is logged in a serialized ledger, creating a persistent “medical history” of system behavior.
+        Developers can detect systemic subcontractor patterns across portfolios — shifting from reactive service to proactive risk control.
+      </p>
+    </div>
+  </div>
+
+  <div class="hero-divider"></div>
+
+  <p class="note" style="margin-top:14px;">
+    Maison Témoin observes and documents only. Corrective work remains the domain of licensed trades and the developer’s process.
+  </p>
+</div>
 
     <!-- SYSTEM -->
 <section id="system">
